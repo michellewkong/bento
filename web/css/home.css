@@ -1,0 +1,118 @@
+body {
+  background: #cccccc;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+}
+
+ul {
+	margin-top: 0;
+}
+
+#home-page {
+  margin: 20px;
+}
+
+#header, #footer {
+  position: relative;
+  background: #444444;
+  color: white;
+  padding: 5px 13px;
+}
+
+#header {
+  height: 37px;
+}
+
+#footer {
+	font-size: 15px;
+  	font-weight: normal;
+	clear: both;
+	text-align: center;
+	height: 48px;
+}
+
+#header #logo {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.clearall {
+	clear: both;
+}
+
+#left-column {
+	width: 50%;
+	float: left;
+}
+
+#middle-space {
+	width: 1%;
+	height: 20px;
+	float: left;
+}
+
+#right-column {
+	width: 49%;
+	float: left;
+}
+
+#add-container {
+	margin: 0;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	border-radius: 5px;
+	position: relative;
+	min-height: 40px;
+}
+
+#essential-container {
+	margin: 0;
+	min-height: 280px;
+	border-radius: 5px;
+	position: relative;
+	background: url('../img/icons/essentials-transparent.png') no-repeat rgba(255, 255, 255, 0.5) center;
+}
+
+.fridge {
+	background: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+}
+
+.bento-box {
+	background: rgba(0, 100, 0, 0.2);
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.view-container {
+	min-height: 445px;
+}
+
+.titleBox {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#ingredient-list-container {
+	border-radius: 5px;
+	position: relative;
+	margin: 10px 0;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+#potsPans {
+	background: url('../img/icons/potspans-transparent.png') no-repeat;
+	width: 515px;
+	height: 235px;
+	position: absolute;
+	right: 15px;
+	bottom: 80px;
+}
+
+.no-decoration-link {
+	text-decoration: none;
+	color: inherit;
+}

@@ -1,0 +1,38 @@
+<div class="detailsPage">	
+	<div class="basicInfo">
+		<div class="artwork" style="background-image: url('{{recipe.thumbnail}}')">
+			<div class="healthyFlag" ng-show="recipe.healthy"></div>
+		</div>
+		<div class="titleInfo">
+			<div class="recipeTitle">{{recipe.recipeName}}</div>
+			<span class="detailsTitle">Ratings: </span><span class="recipeRating">{{recipe.rating}} stars</span>
+			<div></div>
+			<span class="detailsTitle">Estimated Cooking Time: </span><span class="cookTime">{{recipe.timeInMinutes}} min</span>
+		</div>
+	</div>
+	<div id="ingredients-sidebar">
+		<div class="innerContents">
+			<div class="contentHeader">Ingredients:</div>
+			<ul class="ingredient-list">
+				<li id="ingredient" ng-repeat="ingredient in recipe.ingredients">
+					<!--<label>{{ingredient.amount}} {{ingredient.unit}} {{ingredient.name}}</label>-->
+					{{ingredient}}
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="middle-space"></div>
+	<div id="instructions">
+		<div class="innerContents">
+			<div class="contentHeader">Instructions:</div>
+			<ol class="instruction-list">
+				<li class="instruction">Preheat oven to 350 degrees F (175 degrees C). Line 24 muffin cups with paper liners.
+				</li>
+        		<li class="instruction">Beat cake mix, 1 1/4 cups eggnog, eggs, 1/2 teaspoon nutmeg, and 1/2 teaspoon vanilla extract in a bowl using an electric mixer on low until batter is blended. Increase speed to medium and beat for 2 more minutes. Spoon batter into the prepared muffin cups.</li>
+				<li class="instruction">Bake in the preheated oven until a toothpick inserted in the center of a cupcake comes out clean, about 18 to 20 minutes. Transfer cupcakes to a wire rack to cool completely.</li>
+				<li class="instruction">Beat butter and cream cheese together in a bowl using an electric mixer until smooth and creamy. Gradually beat confectioners' sugar, alternating with small amounts of 1/4 cup eggnog and ending with confectioners' sugar, into butter mixture using an electric mixer on low speed until icing is smooth and fluffy. Beat 1/2 teaspoon vanilla extract and 1/2 teaspoon nutmeg into icing until incorporated; spread over cooled cupcakes.</li>
+			</ol>
+		</div>
+	</div>
+  	<div class="clearall"></div>
+</div>

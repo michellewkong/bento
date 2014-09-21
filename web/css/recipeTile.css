@@ -1,0 +1,102 @@
+.allRecipes {
+	margin-top: 10px;
+}
+
+.allRecipes .ingredient-list-container {
+	width: 20%;
+	float: left;
+}
+
+.allRecipes .recipe-container {
+	width: 79%;
+	float: left;
+}
+
+.allRecipes .extra-space {
+	width: 1%;
+	height: 20px;
+	float: left;
+}
+
+.allRecipes .innerContainer {
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+}
+
+.innerContainer .recipes-text {
+	float: left;
+}
+
+#sort-container {
+	float: right;
+}
+
+.recipeTileLink {
+	color: black;
+	text-decoration: none;
+}
+
+.recipeTileLink:hover {
+	color: black;
+}
+
+.recipeTile {
+	display: inline-block;
+	margin: 5px;
+}
+
+.recipeTile .artwork {
+	width: 200px;
+	height: 200px;
+	background: url('../img/recipes/recipe1.png');
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+	background-color: #000000;
+}
+
+.recipeTile .artwork .healthyFlag {
+	width: 78px;
+	height: 78px;
+	background: url('../img/icons/flagHealthy.png') no-repeat;
+	float: right;
+}
+
+.recipeTile .infoPane {
+	background: #ffffff;
+	width: 180px;
+	height: 40px;
+	line-height: 20px;
+	padding: 10px;
+}
+
+.recipeTile .infoPane .ratings {
+	float: left;
+}
+
+.blueStar {
+	background: url('../img/icons/bluestar.png') no-repeat;
+	width: 17px;
+	height: 17px;
+	float: left;
+}
+
+.greyStar {
+	background: url('../img/icons/greystar.png') no-repeat;
+	width: 17px;
+	height: 17px;
+	float: left;
+}
+
+.recipeTile .infoPane .timeToMake {
+	float: right;
+}
+
+.recipeTile .infoPane .recipeName {
+	clear: both;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

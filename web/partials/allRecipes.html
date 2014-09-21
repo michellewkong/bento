@@ -1,0 +1,44 @@
+<div class="container-fluid allRecipes">
+  <div class="ingredient-list-container">
+  	<div class="innerContainer">
+	  	<div id="ingredient-list-text" class="titleBox">Ingredient List:</div>
+	  	<ul class="ingredient-list">
+	  		<li class="ingredient" ng-repeat="ing in submittedIngredients">
+	  			<label>{{ing}}</label>
+	  		</li>
+	  	</ul>
+	</div>
+  </div>
+  <div class="extra-space"></div>
+  <div class="recipe-container">
+  	<div class="innerContainer">
+	  <div class="recipes-text titleBox">Recipes:</div>
+		<div id="sort-container">
+			Sort by:
+	      <select ng-model="orderProp">
+	        <option value="totalTimeInSeconds">Prep Time</option>
+	        <option value="-rating">Rating</option>
+	        <option value="recipeName">Alphabetical</option>
+	      </select>
+	  	</div>
+	  	<div class="clearall"></div>
+	  	<div class="tile-container">
+		  	<a class="recipeTileLink" ng-repeat="recipe in recipes | orderBy: orderProp" ng-href="#/recipes/{{recipe.id}}" ng-click="clickedLink(recipe)">
+		      <div class="recipeTile">
+				<div class="artwork" style="background-image: url('{{recipe.thumbnail}}')">
+					<div class="healthyFlag" ng-show="recipe.healthy"></div>
+				</div>
+				<div class="infoPane">
+					<span class="blueStar ratings" ng-repeat="i in getNumber(recipe.numStars) track by $index"></span>
+					<span class="greyStar ratings" ng-repeat="j in getNumber(5 - recipe.numStars) track by $index"></span>
+					<div class="timeToMake">{{recipe.timeInMinutes}} min</div>
+					<div class="recipeName">{{recipe.recipeName}}</div>
+				</div>
+		      </div>
+		  	</a>
+	    </div>
+	  </div>
+	</div>
+  </div>
+  <div class="clearall"></div>
+</div>

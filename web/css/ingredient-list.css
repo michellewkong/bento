@@ -1,0 +1,26 @@
+#ingredient-list {
+  max-width: 350px;
+  min-height: 290px;
+}
+
+.essential-item {
+  margin-right: 5px;
+  font-weight: normal;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.inputBox {
+	width: 80%;
+}
+
+#recipe-button-container {
+	background-color: #32a1ff;
+	padding: 8px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}

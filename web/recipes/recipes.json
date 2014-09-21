@@ -1,0 +1,97 @@
+{
+    "recipes":
+    [
+        {
+            "recipeName" : "Cupcakes",
+            "titleSlug":"cupcakes",
+            "id":4,
+            "rating" : 1,
+            "numStars" : 1,
+            "ingredients" : [
+                "flour", "sugar", "chocolate chips", "salt"
+            ],
+            "healthy" : false,
+            "totalTimeInSeconds" : 50,
+            "timeInMinutes" : 50,
+            "smallImageUrls" : ["img/recipes/cupcake.jpg"],
+            "thumbnail" : "img/recipes/cupcake.jpg"
+        }, 
+        {
+            "recipeName" : "Grilled Chicken",
+            "titleSlug":"grilled-chicken",
+            "id":2,
+            "rating" : 4.5,
+            "numStars" : 5,
+            "ingredients" : [
+                "chicken", "soy sauce", "cayenne pepper", "basil"
+            ],
+            "healthy" : false,
+            "totalTimeInSeconds" : 40,
+            "timeInMinutes" : 40,
+            "smallImageUrls" : ["img/recipes/grilledchicken.jpg"],
+            "thumbnail" : "img/recipes/grilledchicken.jpg"
+        }, 
+        {
+            "recipeName" : "Lamb Chops",
+            "titleSlug":"lamb-chops",
+            "id":1,
+            "rating" : 3,
+            "numStars" : 3,
+            "ingredients" : [
+                "lamb", "rosemary", "thyme", "soy sauce"
+            ],
+            "healthy" : true,
+            "totalTimeInSeconds" : 120,
+            "timeInMinutes" : 120,
+            "smallImageUrls" : ["img/recipes/lamb-chop.jpeg"],
+            "thumbnail" : "img/recipes/lamb-chop.jpeg"
+        }, 
+        {
+            "recipeName" : "Shrimp Linguini",
+            "titleSlug":"shrimp-linguini",
+            "id" : 3,
+            "rating" : 5,
+            "numStars" : 5,
+            "ingredients" : [
+                "linguini", "shrimp", "lemon", "lemon zest", "basil"
+            ],
+            "healthy" : false,
+            "totalTimeInSeconds" : 30,
+            "timeInMinutes" : 30,
+            "smallImageUrls" : ["img/recipes/shrimp-linguini.jpeg"],
+            "thumbnail" : "img/recipes/shrimp-linguini.jpeg"
+        }, 
+        {
+            "recipeName" : "Ramen",
+            "titleSlug":"ramen",
+            "id" : 5,
+            "rating" : 5,
+            "numStars" : 5,
+            "ingredients" : [
+                "ramen", "pork", "egg", "green onion"
+            ],
+            "healthy" : true,
+            "totalTimeInSeconds" : 60,
+            "timeInMinutes" : 60,
+            "smallImageUrls" : ["img/recipes/recipe1.png"],
+            "thumbnail" : "img/recipes/recipe1.png"
+        }, 
+        {
+            "recipeName" : "Poutine",
+            "titleSlug":"poutine",
+            "id" : 6,
+            "rating" : 2,
+            "numStars" : 2,
+            "ingredients" : [
+                "fries", "gravy", "cheese curds"
+            ],
+            "healthy" : false,
+            "totalTimeInSeconds" : 25,
+            "timeInMinutes" : 25,
+            "smallImageUrls" : ["img/recipes/poutine.jpeg"],
+            "thumbnail" : "img/recipes/poutine.jpeg"
+        }
+        
+    ]
+
+}

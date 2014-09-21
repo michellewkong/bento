@@ -1,0 +1,31 @@
+<div class="ingredients-page">
+  <!--Sidebar content-->
+  <div id="left-column">
+    <div id="add-container" class="fridge">
+      <div id="add-text" class="titleBox">Add an Ingredient:</div>
+      <input id="add-field" class="inputBox" ng-model="ingredientToAdd" ng-enter="addIngredient()">
+      <button id="add-button" ng-click="addIngredient()">Add</button>
+    </div>
+    <div id="essential-container" class="fridge">
+      <div id="essential-text" class="titleBox">Essentials:</div>
+      <div id="essential-ingredients">
+        <label class="essential-item" ng-repeat="essential in essentials">
+          <input type="checkbox" name="selectedEssential[]" class="inputbox" value="{{essential}}" ng-checked="selection.indexOf(essential) > -1"
+          ng-click="toggleSelection(essential)"> {{essential}}
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="middle-space"></div>
+  <div id="right-column">
+    <!--Body content-->
+    <div id="ingredient-list-container">
+      <div id="potsPans"></div>
+      <div class="titleBox">Ingredient List:</div>
+      <ul id="ingredient-list">
+        <li>Essentials</li>
+      </ul>
+      <div id="recipe-button-container" ng-click="findRecipes()">Let's Get Cooking!</div>
+    </div>
+  </div>
+</div>
